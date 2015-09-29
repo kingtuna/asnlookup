@@ -37,7 +37,7 @@ class asnLookup():
             return('')
 
 ### test
-asnn = asnLookup()
+#asnn = asnLookup()
 #asnn.update()
-asnn.lookup('6500')
+#asnn.lookup('6500')
 #asnn.loadFile()
