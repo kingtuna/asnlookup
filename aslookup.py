@@ -1,8 +1,11 @@
 class asnLookup():
     """Write class to lookup asn"""
+    import os
     def __init__(self):
         self.updateDir = "./"
         self.file = str(self.updateDir)+'cidr.txt'
+        if os.path.exists(self.file) is False:
+            self.update()
         self.database = {}
         self.loadFile()
     def update(self):
